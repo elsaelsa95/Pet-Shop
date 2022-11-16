@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Cat Type A1 <= 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi biasa, blow",
+    "estimatedTime": 60,
+    "price": 60000
+  },
+  {
+    "name": "Cat Type A2<= 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi kutu, blow",
+    "estimatedTime": 60,
+    "price": 70000
+  },
+  {
+    "name": "Cat Type A3 <= 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi jamur, blow",
+    "estimatedTime": 60,
+    "price": 80000
+  },
+  {
+    "name": "Cat Type B1 > 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi biasa, blow",
+    "estimatedTime": 60,
+    "price": 70000
+  },
+  {
+    "name": "Cat Type B2 > 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi kutu, blow",
+    "estimatedTime": 60,
+    "price": 80000
+  },
+  {
+    "name": "Cat Type B3 > 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi jamur, blow",
+    "estimatedTime": 60,
+    "price": 90000
+  },
+  {
+    "name": "Dog Type A1 <= 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi biasa, blow",
+    "estimatedTime": 60,
+    "price": 65000
+  },
+  {
+    "name": "Dog Type A2 <= 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi kutu, blow",
+    "estimatedTime": 60,
+    "price": 75000
+  },
+  {
+    "name": "Dog Type A3 <= 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi jamur, blow",
+    "estimatedTime": 60,
+    "price": 85000
+  },
+  {
+    "name": "Dog Type B1 > 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi biasa, blow",
+    "estimatedTime": 60,
+    "price": 75000
+  },
+  {
+    "name": "Dog Type B2 > 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi kutu, blow",
+    "estimatedTime": 60,
+    "price": 85000
+  },
+  {
+    "name": "Dog Type B3 > 10 kg",
+    "description": "Cukur, gunting kuku, sikat gigi, mandi jamur, blow",
+    "estimatedTime": 60,
+    "price": 95000
+  }
+]
