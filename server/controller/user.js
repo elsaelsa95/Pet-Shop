@@ -54,7 +54,7 @@ class Controller {
   }
   static async detail(req, res, next) {
     try {
-      const {id} = req.params;
+      const { id } = req.params;
       const findId = await User.findByPk(id);
 
       if (!findId) {
@@ -63,7 +63,6 @@ class Controller {
 
       res.status(200).json({ findId });
     } catch (error) {
-        console.log(error)
       next(error);
     }
   }
