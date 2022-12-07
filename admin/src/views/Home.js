@@ -10,7 +10,7 @@ export default function Home() {
   const dispatch = useDispatch();
 
   const navigate = useNavigate();
-  const handleGoToItem = () => {
+  const handleGoToProfile = () => {
     navigate({
       pathname: "/profile",
     });
@@ -31,7 +31,7 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login(input));
-    handleGoToItem();
+    handleGoToProfile();
   };
 
   return (
@@ -66,7 +66,7 @@ export default function Home() {
             <Button
               variant="dark"
               type="submit"
-              onClick={() => handleGoToItem()}
+              onClick={() => handleGoToProfile()}
             >
               Login
             </Button>

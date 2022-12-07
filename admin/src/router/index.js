@@ -12,26 +12,29 @@ const router = createBrowserRouter([
   {
     path: "/service",
     element: <Service />,
-    loader:()=>{
-      const access_token = localStorage.getItem("access_token")
-      if(!access_token) return redirect ("/")
-  }
+    loader: () => {
+      const access_token = localStorage.getItem("access_token");
+      if (!access_token) return redirect("/");
+      if(access_token) return ("/service")
+    },
   },
   {
     path: "/appointment",
     element: <Appointment />,
-    loader:()=>{
-      const access_token = localStorage.getItem("access_token")
-      if(!access_token) return redirect ("/")
-  }
+    loader: () => {
+      const access_token = localStorage.getItem("access_token");
+      if (!access_token) return redirect("/");
+      if(access_token) return ("/appointment")
+    },
   },
   {
     path: "/profile",
     element: <Profile />,
-    loader:()=>{
-      const access_token = localStorage.getItem("access_token")
-      if(!access_token) return redirect ("/")
-  }
+    loader: () => {
+      const access_token = localStorage.getItem("access_token");
+      if (!access_token) return redirect("/");
+      if(access_token) return ("/profile")
+    },
   },
   {
     path: "*",

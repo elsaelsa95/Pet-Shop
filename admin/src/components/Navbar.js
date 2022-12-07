@@ -15,12 +15,14 @@ function NavbarAdmin() {
             <Nav.Link href="/service">Service</Nav.Link>
             <Nav.Link href="/appointment">Appointment</Nav.Link>
           </Nav>
-          <Nav className="me-end">
-            <Nav.Link href="/profile">Profile</Nav.Link>
-            <Nav.Link href="/" onClick={() => logout()}>
-              Logout
-            </Nav.Link>
-          </Nav>
+          {localStorage.getItem("access_token") && (
+            <Nav className="me-end">
+              <Nav.Link href="/profile">Profile</Nav.Link>
+              <Nav.Link href="/" onClick={() => logout()}>
+                Logout
+              </Nav.Link>
+            </Nav>
+          )}
         </Container>
       </Navbar>
     </>
