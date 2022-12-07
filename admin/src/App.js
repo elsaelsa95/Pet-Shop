@@ -3,12 +3,16 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
 import Navbar from "./components/Navbar";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <Navbar />
+        <RouterProvider router={router} />
+      </Provider>
     </div>
   );
 }

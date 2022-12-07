@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, redirect } from "react-router-dom";
 import Home from "./../views/Home";
 import Service from "./../views/Service";
 import Appointment from "./../views/Appointment";
@@ -12,14 +12,26 @@ const router = createBrowserRouter([
   {
     path: "/service",
     element: <Service />,
+    loader:()=>{
+      const access_token = localStorage.getItem("access_token")
+      if(!access_token) return redirect ("/")
+  }
   },
   {
     path: "/appointment",
     element: <Appointment />,
+    loader:()=>{
+      const access_token = localStorage.getItem("access_token")
+      if(!access_token) return redirect ("/")
+  }
   },
   {
     path: "/profile",
     element: <Profile />,
+    loader:()=>{
+      const access_token = localStorage.getItem("access_token")
+      if(!access_token) return redirect ("/")
+  }
   },
   {
     path: "*",
